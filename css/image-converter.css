@@ -1,0 +1,235 @@
+
+.converter-container {
+    width: min(1050px, 92%);
+    margin: 65px auto;
+}
+
+.converter-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tool-label {
+    color: #00d9ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.converter-heading h1 {
+    color: var(--text-color, #fff);
+    font-size: clamp(35px, 6vw, 55px);
+    margin: 14px 0;
+}
+
+.converter-heading h1 span {
+    color: #00d9ff;
+}
+
+.converter-heading p {
+    color: var(--muted-color, #aaa);
+    line-height: 1.6;
+}
+
+.converter-box,
+.converter-info {
+    padding: 25px;
+    background: var(--card-bg, #101820);
+    border: 1px solid rgba(0, 217, 255, 0.18);
+    border-radius: 18px;
+}
+
+.upload-area {
+    padding: 55px 20px;
+    text-align: center;
+    border: 2px dashed rgba(0, 217, 255, 0.4);
+    border-radius: 14px;
+    background: rgba(0, 217, 255, 0.035);
+    transition: 0.25s;
+}
+
+.upload-area.drag-active {
+    background: rgba(0, 217, 255, 0.12);
+    border-color: #00d9ff;
+}
+
+.upload-icon {
+    font-size: 45px;
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+.upload-area h2 {
+    color: var(--text-color, #fff);
+    font-size: 22px;
+}
+
+.upload-area p,
+.upload-area small {
+    color: var(--muted-color, #aaa);
+    display: block;
+    margin: 12px 0;
+}
+
+.browse-btn,
+.convert-btn,
+.download-btn {
+    background: linear-gradient(90deg, #00d9ff, #008cff);
+    color: #001018;
+    border: none;
+    border-radius: 9px;
+    padding: 13px 22px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.browse-btn:hover,
+.convert-btn:hover,
+.download-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.converter-workspace {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.image-preview,
+.conversion-settings {
+    min-width: 0;
+    padding: 18px;
+    border-radius: 13px;
+    background: var(--input-bg, #080e14);
+    border: 1px solid rgba(0, 217, 255, 0.12);
+}
+
+.image-preview h3 {
+    color: var(--text-color, #fff);
+    margin-bottom: 15px;
+}
+
+.image-preview img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #05090d;
+}
+
+.image-preview p {
+    color: var(--muted-color, #aaa);
+    font-size: 12px;
+    margin-top: 12px;
+    overflow-wrap: anywhere;
+}
+
+.conversion-settings label {
+    display: block;
+    color: var(--text-color, #fff);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.conversion-settings select {
+    width: 100%;
+    padding: 13px;
+    background: #111c25;
+    color: #fff;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 8px;
+    outline: none;
+}
+
+.quality-section {
+    margin-top: 25px;
+}
+
+.quality-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quality-header strong {
+    color: #00d9ff;
+}
+
+#qualitySlider {
+    width: 100%;
+    accent-color: #00d9ff;
+    margin-top: 10px;
+}
+
+.convert-btn,
+.reset-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.reset-btn {
+    padding: 12px;
+    background: transparent;
+    color: #00d9ff;
+    border: 1px solid #00d9ff;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #ff7777;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.result-preview {
+    grid-column: 1 / -1;
+}
+
+.download-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.converter-info {
+    margin-top: 22px;
+}
+
+.converter-info h2 {
+    color: var(--text-color, #fff);
+    font-size: 19px;
+}
+
+.converter-info p {
+    color: var(--muted-color, #aaa);
+    line-height: 1.8;
+    margin-top: 12px;
+}
+
+.back-home {
+    color: #00d9ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .converter-workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .converter-box,
+    .converter-info {
+        padding: 16px;
+    }
+
+    .upload-area {
+        padding: 40px 12px;
+    }
+
+    .result-preview {
+        grid-column: auto;
+    }
+}

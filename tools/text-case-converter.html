@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Converter | TOOLNEX</title>
+    <meta name="description" content="Convert text to uppercase, lowercase, title case and sentence case instantly with the free TOOLNEX Text Case Converter.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/text-case-converter.css">
+</head>
+<body>
+
+    <header class="tool-header">
+        <a href="../index.html" class="logo">TOOL<span>NEX</span></a>
+        <a href="../index.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="converter-container">
+
+        <section class="converter-heading">
+            <span class="tool-tag">FREE TEXT TOOL</span>
+            <h1>Text Case <span>Converter</span></h1>
+            <p>Convert your text into different formats instantly.</p>
+        </section>
+
+        <section class="converter-box">
+
+            <div class="text-area-heading">
+                <label for="inputText">Your Text</label>
+                <span id="inputStats">0 words · 0 characters</span>
+            </div>
+
+            <textarea
+                id="inputText"
+                placeholder="Type or paste your text here..."
+            ></textarea>
+
+            <div class="action-buttons">
+                <button data-action="upper">UPPERCASE</button>
+                <button data-action="lower">lowercase</button>
+                <button data-action="title">Title Case</button>
+                <button data-action="sentence">Sentence case</button>
+                <button data-action="capitalize">Capitalized Case</button>
+                <button data-action="spaces">Remove Extra Spaces</button>
+            </div>
+
+            <div class="output-heading">
+                <label for="outputText">Converted Text</label>
+                <span id="outputStats">0 words · 0 characters</span>
+            </div>
+
+            <textarea
+                id="outputText"
+                placeholder="Your converted text will appear here..."
+                readonly
+            ></textarea>
+
+            <div class="bottom-actions">
+                <button id="copyBtn" class="primary-btn">Copy Text</button>
+                <button id="downloadBtn" class="secondary-btn">Download Text</button>
+                <button id="clearBtn" class="clear-btn">Clear All</button>
+            </div>
+
+            <p id="statusMessage" aria-live="polite"></p>
+
+        </section>
+
+        <p class="privacy-note">
+            🔒 Your text is processed locally in your browser.
+        </p>
+
+    </main>
+
+    <script src="../js/text-case-converter.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create custom QR codes online with TOOLNEX.">
+
+    <title>QR Generator | TOOLNEX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/qr-generator.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">TOOL<span>NEX</span><i>.</i></a>
+        <a href="../index.html" class="nav-button">← Back to Home</a>
+    </header>
+
+    <main class="qr-page">
+
+        <div class="qr-heading">
+            <span class="section-label">TOOLNEX GENERATORS</span>
+            <h1>QR Code <span>Generator.</span></h1>
+            <p>Create beautiful, customized QR codes in seconds.</p>
+        </div>
+
+        <section class="qr-container">
+
+            <div class="qr-form">
+
+                <label for="qrType">QR Code Type</label>
+                <select id="qrType">
+                    <option value="url">Website URL</option>
+                    <option value="text">Plain Text</option>
+                    <option value="email">Email Address</option>
+                </select>
+
+                <label for="qrInput">Enter Your Content</label>
+                <textarea
+                    id="qrInput"
+                    placeholder="https://example.com"
+                    rows="4"
+                    maxlength="2000"
+                ></textarea>
+
+                <div class="color-settings">
+
+                    <div>
+                        <label for="qrColor">QR Color</label>
+                        <input type="color" id="qrColor" value="#07131c">
+                    </div>
+
+                    <div>
+                        <label for="bgColor">Background Color</label>
+                        <input type="color" id="bgColor" value="#ffffff">
+                    </div>
+
+                </div>
+
+                <button id="generateBtn" class="qr-generate-btn">
+                    Generate QR Code ↗
+                </button>
+
+                <button id="downloadBtn" class="qr-download-btn" disabled>
+                    Download PNG ↓
+                </button>
+
+                <button id="resetBtn" class="qr-reset-btn">
+                    Reset
+                </button>
+
+                <p id="qrStatus" role="status"></p>
+
+            </div>
+
+            <div class="qr-preview">
+
+                <span class="preview-label">YOUR QR CODE</span>
+
+                <div class="qr-output" id="qrOutput">
+                    <div class="qr-placeholder">
+                        <span>▦</span>
+                        <p>Your QR code will appear here</p>
+                    </div>
+                </div>
+
+                <p class="qr-caption">
+                    Scan this code with your phone camera.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/qr-generator.js"></script>
+
+</body>
+</html>

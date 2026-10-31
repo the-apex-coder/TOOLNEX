@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Converter | TOOLNEX</title>
+    <meta name="description" content="Encode and decode Base64 text online for free with TOOLNEX. Fast, simple and easy-to-use Base64 converter.">
+    
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/base64-converter.css">
+</head>
+<body>
+
+    <header class="tool-header">
+        <a href="../index.html" class="logo">TOOL<span>NEX</span></a>
+        <a href="../index.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="base64-container">
+
+        <section class="base64-heading">
+            <span class="tool-tag">FREE DEVELOPER TOOL</span>
+            <h1>Base64 <span>Converter</span></h1>
+            <p>Encode and decode text into Base64 format instantly.</p>
+        </section>
+
+        <section class="base64-box">
+
+            <label for="inputText">Input Text</label>
+
+            <textarea
+                id="inputText"
+                placeholder="Enter your text or Base64 string..."
+                spellcheck="false"
+            ></textarea>
+
+            <div class="base64-actions">
+                <button id="encodeBtn" class="primary-btn">Encode to Base64</button>
+                <button id="decodeBtn">Decode from Base64</button>
+            </div>
+
+            <div class="output-heading">
+                <label for="outputText">Result</label>
+                <span id="resultStats">0 characters</span>
+            </div>
+
+            <textarea
+                id="outputText"
+                placeholder="Your result will appear here..."
+                readonly
+                spellcheck="false"
+            ></textarea>
+
+            <div class="bottom-actions">
+                <button id="copyBtn" class="primary-btn">Copy Result</button>
+                <button id="downloadBtn">Download Result</button>
+                <button id="clearBtn" class="clear-btn">Clear All</button>
+            </div>
+
+            <p id="statusMessage" aria-live="polite">
+                Ready to convert.
+            </p>
+
+        </section>
+
+        <p class="privacy-note">
+            🔒 Your data is processed locally in your browser.
+        </p>
+
+    </main>
+
+    <script src="../js/base64-converter.js"></script>
+</body>
+</html>

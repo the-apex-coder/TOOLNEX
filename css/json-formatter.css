@@ -1,0 +1,190 @@
+.json-container {
+    width: min(950px, 92%);
+    margin: 65px auto;
+}
+
+.tool-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 5%;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.15);
+}
+
+.logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #00d9ff;
+}
+
+.back-home {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+.json-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tool-tag {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 30px;
+    color: #00d9ff;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.json-heading h1 {
+    color: #fff;
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 18px 0 10px;
+}
+
+.json-heading h1 span {
+    color: #00d9ff;
+}
+
+.json-heading p {
+    color: #929eaf;
+}
+
+.json-box {
+    padding: 28px;
+    background: rgba(15, 25, 42, 0.9);
+    border: 1px solid rgba(0, 217, 255, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.editor-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.json-box textarea {
+    display: block;
+    width: 100%;
+    min-height: 230px;
+    resize: vertical;
+    padding: 18px;
+    border: 1px solid #263b55;
+    border-radius: 12px;
+    background: #080f1b;
+    color: #d7f7ff;
+    outline: none;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    tab-size: 4;
+}
+
+.json-box textarea:focus {
+    border-color: #00d9ff;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.1);
+}
+
+.json-box textarea::placeholder {
+    color: #64748b;
+}
+
+.json-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 28px;
+}
+
+.json-actions button,
+.small-btn {
+    padding: 12px 17px;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(0, 217, 255, 0.07);
+    color: #00d9ff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.json-actions button:hover,
+.small-btn:hover {
+    background: #00d9ff;
+    color: #06101b;
+    transform: translateY(-2px);
+}
+
+.json-actions .primary-btn {
+    background: #00d9ff;
+    color: #06101b;
+}
+
+.json-actions .primary-btn:hover {
+    background: #fff;
+}
+
+.small-btn {
+    padding: 8px 13px;
+    font-size: 12px;
+}
+
+.output-heading {
+    margin-top: 5px;
+}
+
+#statusMessage {
+    min-height: 22px;
+    margin-top: 17px;
+    color: #00d9ff;
+    font-size: 13px;
+}
+
+#statusMessage.error {
+    color: #ff7777;
+}
+
+#statusMessage.success {
+    color: #54e6a1;
+}
+
+.privacy-note {
+    margin-top: 22px;
+    color: #8292a7;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .json-container {
+        margin: 40px auto;
+    }
+
+    .json-box {
+        padding: 16px;
+    }
+
+    .json-box textarea {
+        min-height: 190px;
+        font-size: 12px;
+    }
+
+    .json-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .json-actions button {
+        width: 100%;
+    }
+}

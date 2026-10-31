@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter & Validator | TOOLNEX</title>
+
+    <meta name="description" content="Format, validate and minify JSON online for free. Use the TOOLNEX JSON Formatter to organize and check your JSON data.">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/json-formatter.css">
+</head>
+<body>
+
+    <header class="tool-header">
+        <a href="../index.html" class="logo">TOOL<span>NEX</span></a>
+        <a href="../index.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="json-container">
+
+        <section class="json-heading">
+            <span class="tool-tag">FREE DEVELOPER TOOL</span>
+            <h1>JSON <span>Formatter</span></h1>
+            <p>Format, validate and minify your JSON data instantly.</p>
+        </section>
+
+        <section class="json-box">
+
+            <div class="editor-heading">
+                <label for="jsonInput">Input JSON</label>
+                <button id="clearBtn" class="small-btn">Clear</button>
+            </div>
+
+            <textarea
+                id="jsonInput"
+                spellcheck="false"
+                placeholder='Paste JSON here...&#10;&#10;Example:&#10;{"name":"TOOLNEX","active":true}'
+            ></textarea>
+
+            <div class="json-actions">
+                <button id="formatBtn" class="primary-btn">Format JSON</button>
+                <button id="validateBtn">Validate JSON</button>
+                <button id="minifyBtn">Minify JSON</button>
+            </div>
+
+            <div class="editor-heading output-heading">
+                <label for="jsonOutput">Output</label>
+                <button id="copyBtn" class="small-btn">Copy Output</button>
+            </div>
+
+            <textarea
+                id="jsonOutput"
+                spellcheck="false"
+                placeholder="Formatted JSON will appear here..."
+                readonly
+            ></textarea>
+
+            <div id="statusMessage" aria-live="polite">
+                Ready to process JSON.
+            </div>
+
+        </section>
+
+        <p class="privacy-note">
+            🔒 Your JSON data is processed locally in your browser.
+        </p>
+
+    </main>
+
+    <script src="../js/json-formatter.js"></script>
+</body>
+</html>

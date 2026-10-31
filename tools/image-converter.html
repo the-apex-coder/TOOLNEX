@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert images between JPG, PNG and WebP formats online for free.">
+    <title>Image Converter - TOOLNEX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/image-converter.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">TOOL<span>NEX</span></a>
+        <a href="../index.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="converter-container">
+
+        <section class="converter-heading">
+            <span class="tool-label">FREE ONLINE IMAGE TOOL</span>
+            <h1>Image <span>Converter</span></h1>
+            <p>Convert your images into JPG, PNG and WebP formats instantly.</p>
+        </section>
+
+        <section class="converter-box">
+
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">⇧</div>
+                <h2>Drop Your Image Here</h2>
+                <p>or click below to browse your device</p>
+
+                <button type="button" id="browseBtn" class="browse-btn">
+                    Choose Image
+                </button>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/jpeg,image/png,image/webp"
+                    hidden
+                >
+
+                <small>Supported: JPG, PNG, WebP · Maximum 20 MB</small>
+            </div>
+
+            <div id="converterWorkspace" class="converter-workspace" hidden>
+
+                <div class="image-preview">
+                    <h3>Original Image</h3>
+                    <img id="originalPreview" alt="Original image preview">
+                    <p id="originalInfo"></p>
+                </div>
+
+                <div class="conversion-settings">
+
+                    <label for="outputFormat">Convert To</label>
+                    <select id="outputFormat">
+                        <option value="image/png">PNG</option>
+                        <option value="image/jpeg">JPG</option>
+                        <option value="image/webp">WebP</option>
+                    </select>
+
+                    <div id="qualitySection" class="quality-section" hidden>
+                        <div class="quality-header">
+                            <label for="qualitySlider">Image Quality</label>
+                            <strong id="qualityValue">90%</strong>
+                        </div>
+                        <input
+                            type="range"
+                            id="qualitySlider"
+                            min="10"
+                            max="100"
+                            value="90"
+                        >
+                    </div>
+
+                    <button id="convertBtn" class="convert-btn">
+                        Convert Image
+                    </button>
+
+                    <button id="resetBtn" class="reset-btn">
+                        Choose Another Image
+                    </button>
+
+                    <p id="errorMessage" class="error-message"></p>
+                </div>
+
+                <div class="image-preview result-preview" id="resultPanel" hidden>
+                    <h3>Converted Image</h3>
+                    <img id="convertedPreview" alt="Converted image preview">
+                    <p id="convertedInfo"></p>
+
+                    <button id="downloadBtn" class="download-btn">
+                        Download Image
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="converter-info">
+            <h2>About Image Converter</h2>
+            <p>
+                Convert images between JPG, PNG and WebP formats without
+                installing software. Your images are processed locally
+                in your browser and are not uploaded to a server.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="../js/image-converter.js"></script>
+</body>
+</html>

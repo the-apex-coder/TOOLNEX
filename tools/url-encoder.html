@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Encoder & Decoder | TOOLNEX</title>
+    <meta name="description" content="Encode and decode URLs online for free with TOOLNEX. Quickly convert special characters using our URL Encoder and Decoder.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/url-encoder.css">
+</head>
+<body>
+
+    <header class="tool-header">
+        <a href="../index.html" class="logo">TOOL<span>NEX</span></a>
+        <a href="../index.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="url-container">
+
+        <section class="url-heading">
+            <span class="tool-tag">FREE DEVELOPER TOOL</span>
+            <h1>URL <span>Encoder & Decoder</span></h1>
+            <p>Encode and decode URLs and text instantly.</p>
+        </section>
+
+        <section class="url-box">
+
+            <label for="inputText">Input URL or Text</label>
+
+            <textarea
+                id="inputText"
+                placeholder="Enter URL or text here..."
+                spellcheck="false"
+            ></textarea>
+
+            <div class="url-actions">
+                <button id="encodeBtn" class="primary-btn">
+                    Encode URL
+                </button>
+
+                <button id="decodeBtn">
+                    Decode URL
+                </button>
+            </div>
+
+            <div class="output-heading">
+                <label for="outputText">Result</label>
+                <span id="resultStats">0 characters</span>
+            </div>
+
+            <textarea
+                id="outputText"
+                placeholder="Your result will appear here..."
+                readonly
+                spellcheck="false"
+            ></textarea>
+
+            <div class="bottom-actions">
+                <button id="copyBtn" class="primary-btn">Copy Result</button>
+                <button id="downloadBtn">Download Result</button>
+                <button id="clearBtn" class="clear-btn">Clear All</button>
+            </div>
+
+            <p id="statusMessage" aria-live="polite">
+                Ready to convert.
+            </p>
+
+        </section>
+
+        <p class="privacy-note">
+            🔒 Your data is processed locally in your browser.
+        </p>
+
+    </main>
+
+    <script src="../js/url-encoder.js"></script>
+</body>
+</html>

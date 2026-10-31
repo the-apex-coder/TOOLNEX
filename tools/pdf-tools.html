@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online PDF tools to merge, split and convert PDF files and images.">
+    <title>PDF Tools - TOOLNEX</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pdf-tools.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">TOOL<span>NEX</span></a>
+        <a href="../index.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="pdf-container">
+
+        <section class="pdf-heading">
+            <span class="tool-label">FREE ONLINE PDF TOOLKIT</span>
+            <h1>PDF <span>Tools</span></h1>
+            <p>Merge, split and convert your PDF files easily.</p>
+        </section>
+
+        <section class="pdf-workspace">
+
+            <div class="tool-tabs">
+                <button class="tab-btn active" data-tool="merge">Merge PDF</button>
+                <button class="tab-btn" data-tool="split">Split PDF</button>
+                <button class="tab-btn" data-tool="images">Images to PDF</button>
+                <button class="tab-btn" data-tool="convert">PDF to Images</button>
+            </div>
+
+            <div class="pdf-panel">
+
+                <!-- MERGE PDF -->
+                <div class="tool-content active" id="mergePanel">
+
+                    <h2>Merge PDF Files</h2>
+                    <p>Select multiple PDF files to combine them into one PDF.</p>
+
+                    <input type="file" id="mergeInput" accept=".pdf,application/pdf" multiple hidden>
+
+                    <button class="browse-btn" data-input="mergeInput">
+                        + Choose PDF Files
+                    </button>
+
+                    <div id="mergeFileList" class="file-list">
+                        No files selected.
+                    </div>
+
+                    <button id="mergeBtn" class="action-btn">
+                        Merge PDF Files
+                    </button>
+
+                </div>
+
+                <!-- SPLIT PDF -->
+                <div class="tool-content" id="splitPanel">
+
+                    <h2>Split PDF</h2>
+                    <p>Extract selected pages from your PDF document.</p>
+
+                    <input type="file" id="splitInput" accept=".pdf,application/pdf" hidden>
+
+                    <button class="browse-btn" data-input="splitInput">
+                        + Choose PDF File
+                    </button>
+
+                    <div id="splitFileInfo" class="file-list">
+                        No PDF selected.
+                    </div>
+
+                    <label for="pageRange">Page Range</label>
+                    <input
+                        type="text"
+                        id="pageRange"
+                        placeholder="Example: 1-3, 5, 8-10"
+                    >
+
+                    <small class="field-help">
+                        Example: 1-3, 5 means pages 1, 2, 3 and 5.
+                    </small>
+
+                    <button id="splitBtn" class="action-btn">
+                        Extract Pages
+                    </button>
+
+                </div>
+
+                <!-- IMAGES TO PDF -->
+                <div class="tool-content" id="imagesPanel">
+
+                    <h2>Images to PDF</h2>
+                    <p>Combine multiple images into a single PDF document.</p>
+
+                    <input
+                        type="file"
+                        id="imagesInput"
+                        accept="image/jpeg,image/png,image/webp"
+                        multiple
+                        hidden
+                    >
+
+                    <button class="browse-btn" data-input="imagesInput">
+                        + Choose Images
+                    </button>
+
+                    <div id="imagesFileList" class="file-list">
+                        No images selected.
+                    </div>
+
+                    <button id="imagesBtn" class="action-btn">
+                        Convert Images to PDF
+                    </button>
+
+                </div>
+
+                <!-- PDF TO IMAGES -->
+                <div class="tool-content" id="convertPanel">
+
+                    <h2>PDF to Images</h2>
+                    <p>Convert each page of your PDF into a PNG image.</p>
+
+                    <input type="file" id="convertInput" accept=".pdf,application/pdf" hidden>
+
+                    <button class="browse-btn" data-input="convertInput">
+                        + Choose PDF File
+                    </button>
+
+                    <div id="convertFileInfo" class="file-list">
+                        No PDF selected.
+                    </div>
+
+                    <button id="convertBtn" class="action-btn">
+                        Convert PDF to Images
+                    </button>
+
+                    <div id="imageResults" class="image-results"></div>
+
+                </div>
+
+                <div id="pdfStatus" class="pdf-status" aria-live="polite"></div>
+
+                <div id="downloadArea" class="download-area" hidden>
+                    <p id="downloadMessage">Your file is ready.</p>
+                    <a id="downloadLink" class="download-btn" href="#" download>
+                        Download File
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="pdf-info">
+            <h2>About TOOLNEX PDF Tools</h2>
+            <p>
+                Manage PDF documents directly in your browser.
+                Merge documents, extract pages and convert images
+                without uploading your files to our server.
+            </p>
+            <small>Maximum supported PDF file size: 50 MB per file.</small>
+        </section>
+
+    </main>
+
+    <!-- PDF-LIB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+
+    <!-- PDF.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <script src="../js/pdf-tools.js"></script>
+
+</body>
+</html>
