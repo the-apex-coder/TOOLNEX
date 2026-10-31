@@ -6,32 +6,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Verification -->
+    <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="qCB3Lh2hnZC_eKk-9dJciXlxJFnbBsDnRE0kiThZESY">
 
     <!-- Primary SEO -->
-    <title>TOOLNEX - Free Online Tools for Everyday Tasks</title>
+    <title>TOOLNEX - Free Online Tools for Images, PDFs, Text & More</title>
 
-    <meta name="description" content="Use free online tools at TOOLNEX. Compress images, generate QR codes, manage PDFs, count words, create passwords and more.">
+    <meta name="description" content="Explore TOOLNEX, your free online toolbox. Compress images, convert image formats, generate QR codes, manage PDFs, count words, create passwords and use developer tools.">
 
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#05080d">
+
+    <meta name="author" content="TOOLNEX">
 
     <link rel="canonical" href="https://the-apex-coder.github.io/TOOLNEX/">
 
-    <!-- Open Graph / Social Sharing -->
+    <!-- Open Graph SEO -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="TOOLNEX - Free Online Tools">
-    <meta property="og:description" content="Discover free online tools for images, PDFs, text, passwords and productivity.">
-    <meta property="og:url" content="https://the-apex-coder.github.io/TOOLNEX/">
     <meta property="og:site_name" content="TOOLNEX">
+    <meta property="og:title" content="TOOLNEX - Free Online Tools for Everyone">
+    <meta property="og:description" content="Your ultimate collection of free online tools. Compress images, create QR codes, manage PDFs and simplify everyday tasks.">
+    <meta property="og:url" content="https://the-apex-coder.github.io/TOOLNEX/">
+    <meta property="og:locale" content="en_US">
 
-    <!-- Twitter Sharing -->
+    <!-- Twitter SEO -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="TOOLNEX - Free Online Tools">
-    <meta name="twitter:description" content="Your ultimate collection of free online tools. Fast, simple and powerful.">
+    <meta name="twitter:description" content="Discover free online tools for image compression, QR generation, PDFs, text and developer productivity.">
 
-    <!-- Stylesheet -->
+    <!-- Website Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -39,30 +42,50 @@
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <a href="index.html" class="logo">
+
+        <a href="index.html" class="logo" aria-label="TOOLNEX Home">
             TOOL<span>NEX</span><i style="color: rebeccapurple;">✦</i>
         </a>
 
-        <nav class="nav-links" id="navLinks">
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
             <a href="#home">Home</a>
             <a href="#tools">Explore Tools</a>
             <a href="#about">About</a>
         </nav>
 
         <div class="nav-actions">
-            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+
+            <button
+                class="theme-btn"
+                id="themeBtn"
+                aria-label="Toggle theme"
+                type="button">
                 ☼
             </button>
-            <a href="#tools" class="nav-button">Explore Now ↗</a>
+
+            <a href="#tools" class="nav-button">
+                Explore Now ↗
+            </a>
+
         </div>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+            type="button">
             ☰
         </button>
+
     </header>
 
-    <!-- HERO -->
+
+    <!-- MAIN CONTENT -->
     <main>
+
+        <!-- HERO SECTION -->
         <section class="hero" id="home">
 
             <div class="hero-glow"></div>
@@ -75,32 +98,54 @@
                 </div>
 
                 <h1>
-                    Everything You Need.
+                    Free Online Tools for Everyday Tasks.
                     <br>
-                    <span>One Powerful Platform.</span>
+                    <span>Everything in One Platform.</span>
                 </h1>
 
                 <p>
-                    Discover powerful online tools to simplify your work,
-                    boost productivity and save your valuable time.
+                    Explore free online tools to compress images,
+                    generate QR codes, convert files, manage PDFs,
+                    count words and simplify everyday tasks.
+                    Fast, simple and accessible from any device.
                 </p>
 
+                <!-- TOOL SEARCH -->
                 <div class="search-container">
-                    <span class="search-icon">⌕</span>
+
+                    <label for="searchInput" class="search-icon">
+                        ⌕
+                    </label>
+
                     <input
                         type="search"
                         id="searchInput"
                         placeholder="Search for a tool..."
                         autocomplete="off"
-                    >
-                    <button id="searchBtn">Search ↗</button>
+                        aria-label="Search available online tools">
+
+                    <button id="searchBtn" type="button">
+                        Search ↗
+                    </button>
+
                 </div>
 
                 <div class="popular-searches">
+
                     <span>Popular:</span>
-                    <a href="#tools">Image Compressor</a>
-                    <a href="#tools">QR Generator</a>
-                    <a href="#tools">PDF Tools</a>
+
+                    <a href="tools/image-compressor.html">
+                        Image Compressor
+                    </a>
+
+                    <a href="tools/qr-generator.html">
+                        QR Generator
+                    </a>
+
+                    <a href="tools/pdf-tools.html">
+                        PDF Tools
+                    </a>
+
                 </div>
 
             </div>
@@ -112,159 +157,318 @@
 
         </section>
 
-        <!-- TOOLS -->
+
+        <!-- TOOLS COLLECTION -->
         <section class="tools-section" id="tools">
 
             <div class="section-heading">
+
                 <div>
-                    <span class="section-label">OUR COLLECTION</span>
-                    <h2>Explore <span>Tools.</span></h2>
-                    <p>Everything you need, all in one place.</p>
+
+                    <span class="section-label">
+                        OUR COLLECTION
+                    </span>
+
+                    <h2>
+                        Explore <span>Free Online Tools.</span>
+                    </h2>
+
+                    <p>
+                        Discover useful free tools for images,
+                        documents, text and everyday productivity.
+                    </p>
+
                 </div>
+
             </div>
 
+
+            <!-- TOOL CARDS -->
             <div class="tools-grid" id="toolsGrid">
+
 
                 <!-- 1. IMAGE COMPRESSOR -->
                 <article class="tool-card" data-name="image compressor">
+
                     <div class="tool-icon">▧</div>
-                    <span class="tool-category">IMAGE TOOLS</span>
+
+                    <span class="tool-category">
+                        IMAGE TOOLS
+                    </span>
+
                     <h3>Image Compressor</h3>
-                    <p>Reduce image size without sacrificing quality.</p>
+
+                    <p>
+                        Compress JPG, PNG and WebP images
+                        to reduce file size.
+                    </p>
+
                     <a href="tools/image-compressor.html" class="tool-link">
-                        Open Tool ↗
+                        Compress Images ↗
                     </a>
+
                 </article>
+
 
                 <!-- 2. IMAGE CONVERTER -->
                 <article class="tool-card" data-name="image converter">
+
                     <div class="tool-icon">◈</div>
-                    <span class="tool-category">IMAGE TOOLS</span>
+
+                    <span class="tool-category">
+                        IMAGE TOOLS
+                    </span>
+
                     <h3>Image Converter</h3>
-                    <p>Convert images into different formats.</p>
+
+                    <p>
+                        Convert images between supported
+                        formats quickly and easily.
+                    </p>
+
                     <a href="tools/image-converter.html" class="tool-link">
-                        Open Tool ↗
+                        Convert Images ↗
                     </a>
+
                 </article>
+
 
                 <!-- 3. QR GENERATOR -->
                 <article class="tool-card" data-name="qr generator">
+
                     <div class="tool-icon">▦</div>
-                    <span class="tool-category">GENERATORS</span>
-                    <h3>QR Generator</h3>
-                    <p>Create custom QR codes in seconds.</p>
+
+                    <span class="tool-category">
+                        GENERATORS
+                    </span>
+
+                    <h3>QR Code Generator</h3>
+
+                    <p>
+                        Generate QR codes for your links
+                        and other supported content.
+                    </p>
+
                     <a href="tools/qr-generator.html" class="tool-link">
-                        Open Tool ↗
+                        Generate QR Code ↗
                     </a>
+
                 </article>
+
 
                 <!-- 4. PDF TOOLS -->
                 <article class="tool-card" data-name="pdf tools">
+
                     <div class="tool-icon">▤</div>
-                    <span class="tool-category">PDF TOOLS</span>
+
+                    <span class="tool-category">
+                        PDF TOOLS
+                    </span>
+
                     <h3>PDF Tools</h3>
-                    <p>Manage and organize your PDF documents.</p>
+
+                    <p>
+                        Work with PDF documents using
+                        useful browser-based PDF utilities.
+                    </p>
+
                     <a href="tools/pdf-tools.html" class="tool-link">
-                        Open Tool ↗
+                        Open PDF Tools ↗
                     </a>
+
                 </article>
+
 
                 <!-- 5. WORD COUNTER -->
                 <article class="tool-card" data-name="word counter">
+
                     <div class="tool-icon">T</div>
-                    <span class="tool-category">TEXT TOOLS</span>
+
+                    <span class="tool-category">
+                        TEXT TOOLS
+                    </span>
+
                     <h3>Word Counter</h3>
-                    <p>Count words, characters and sentences.</p>
+
+                    <p>
+                        Count words, characters and sentences
+                        in your text.
+                    </p>
+
                     <a href="tools/word-counter.html" class="tool-link">
-                        Open Tool ↗
+                        Count Words ↗
                     </a>
+
                 </article>
+
 
                 <!-- 6. PASSWORD GENERATOR -->
                 <article class="tool-card" data-name="password generator">
+
                     <div class="tool-icon">⌑</div>
-                    <span class="tool-category">GENERATORS</span>
+
+                    <span class="tool-category">
+                        GENERATORS
+                    </span>
+
                     <h3>Password Generator</h3>
-                    <p>Generate strong random passwords.</p>
+
+                    <p>
+                        Create random passwords with
+                        customizable generation options.
+                    </p>
+
                     <a href="tools/password-generator.html" class="tool-link">
-                        Open Tool ↗
+                        Generate Password ↗
                     </a>
+
                 </article>
+
 
                 <!-- 7. TEXT CASE CONVERTER -->
                 <article class="tool-card" data-name="text case converter">
+
                     <div class="tool-icon">🔠</div>
-                    <span class="tool-category">TEXT TOOLS</span>
+
+                    <span class="tool-category">
+                        TEXT TOOLS
+                    </span>
+
                     <h3>Text Case Converter</h3>
-                    <p>Convert text into uppercase, lowercase, title case and more.</p>
+
+                    <p>
+                        Convert text into uppercase,
+                        lowercase, title case and more.
+                    </p>
+
                     <a href="tools/text-case-converter.html" class="tool-link">
-                        Open Tool ↗
+                        Convert Text ↗
                     </a>
+
                 </article>
+
 
                 <!-- 8. JSON FORMATTER -->
                 <article class="tool-card" data-name="json formatter">
+
                     <div class="tool-icon">🧩</div>
-                    <span class="tool-category">DEVELOPER TOOLS</span>
+
+                    <span class="tool-category">
+                        DEVELOPER TOOLS
+                    </span>
+
                     <h3>JSON Formatter</h3>
-                    <p>Format, validate and minify JSON data instantly.</p>
+
+                    <p>
+                        Format, validate and minify
+                        JSON data.
+                    </p>
+
                     <a href="tools/json-formatter.html" class="tool-link">
-                        Open Tool ↗
+                        Format JSON ↗
                     </a>
+
                 </article>
+
 
                 <!-- 9. BASE64 CONVERTER -->
                 <article class="tool-card" data-name="base64 converter">
+
                     <div class="tool-icon">🔐</div>
-                    <span class="tool-category">DEVELOPER TOOLS</span>
+
+                    <span class="tool-category">
+                        DEVELOPER TOOLS
+                    </span>
+
                     <h3>Base64 Converter</h3>
-                    <p>Encode and decode text into Base64 format instantly.</p>
+
+                    <p>
+                        Encode and decode text
+                        using Base64 format.
+                    </p>
+
                     <a href="tools/base64-converter.html" class="tool-link">
-                        Open Tool ↗
+                        Convert Base64 ↗
                     </a>
+
                 </article>
+
 
                 <!-- 10. URL ENCODER / DECODER -->
                 <article class="tool-card" data-name="url encoder decoder">
+
                     <div class="tool-icon">🔗</div>
-                    <span class="tool-category">DEVELOPER TOOLS</span>
+
+                    <span class="tool-category">
+                        DEVELOPER TOOLS
+                    </span>
+
                     <h3>URL Encoder / Decoder</h3>
-                    <p>Encode and decode URLs and text instantly.</p>
+
+                    <p>
+                        Encode and decode URLs and
+                        text using URL encoding.
+                    </p>
+
                     <a href="tools/url-encoder.html" class="tool-link">
-                        Open Tool ↗
+                        Encode URLs ↗
                     </a>
+
                 </article>
+
 
             </div>
 
             <p class="no-results" id="noResults" hidden>
-                No matching tools found.
+                No matching tools found. Try another search.
             </p>
 
         </section>
 
-        <!-- ABOUT -->
+
+        <!-- ABOUT SECTION -->
         <section class="about-section" id="about">
-            <span class="section-label">WHY TOOLNEX?</span>
-            <h2>Less Effort. <span>More Results.</span></h2>
+
+            <span class="section-label">
+                WHY TOOLNEX?
+            </span>
+
+            <h2>
+                Less Effort. <span>More Results.</span>
+            </h2>
+
             <p>
-                TOOLNEX is your all-in-one destination for free online tools. From image editing and PDF management to text and developer utilities, we make everyday tasks faster, easier, and simpler — all in one place.
+                TOOLNEX is a collection of free online tools
+                designed to make everyday digital tasks easier.
+                Compress images, convert files, generate QR codes,
+                manage PDF documents, count words and use developer
+                utilities from one convenient platform.
             </p>
+
         </section>
 
     </main>
 
+
     <!-- FOOTER -->
     <footer class="footer">
-        <a href="index.html" class="logo">
+
+        <a href="index.html" class="logo" aria-label="TOOLNEX Home">
             TOOL<span>NEX</span><i>✦</i>
         </a>
 
-        <p>© 2026 TOOLNEX. All rights reserved.</p>
+        <p>
+            © 2026 TOOLNEX. All rights reserved.
+        </p>
 
-        <span>MADE FOR PRODUCTIVITY.</span>
+        <span>
+            MADE FOR PRODUCTIVITY.
+        </span>
+
     </footer>
 
+
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 
 </body>
