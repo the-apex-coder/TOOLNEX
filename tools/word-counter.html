@@ -1,51 +1,149 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online Word Counter. Count words, characters, sentences, paragraphs and reading time instantly.">
-    <title>Word Counter - TOOLNEX</title>
 
+    <!-- Primary SEO -->
+    <title>Free Online Word Counter - Count Words & Characters | TOOLNEX</title>
+
+    <meta name="description"
+        content="Use TOOLNEX free online Word Counter to count words, characters, sentences and paragraphs. Calculate reading time instantly while your text stays in your browser.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#05080d">
+
+    <link rel="canonical"
+        href="https://the-apex-coder.github.io/TOOLNEX/tools/word-counter.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="Free Online Word Counter - TOOLNEX">
+    <meta property="og:description"
+        content="Count words, characters, sentences, paragraphs and reading time instantly with TOOLNEX Word Counter.">
+    <meta property="og:url"
+        content="https://the-apex-coder.github.io/TOOLNEX/tools/word-counter.html">
+    <meta property="og:site_name" content="TOOLNEX">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title"
+        content="Free Online Word Counter | TOOLNEX">
+    <meta name="twitter:description"
+        content="Count words and characters, analyze text and calculate reading time for free.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TOOLNEX Word Counter",
+        "url": "https://the-apex-coder.github.io/TOOLNEX/tools/word-counter.html",
+        "description": "A free online word counter that counts words, characters, sentences, paragraphs and estimated reading time.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/word-counter.css">
+
 </head>
+
 <body>
 
+    <!-- Navigation -->
     <header class="navbar">
-        <a href="../index.html" class="logo">TOOL<span>NEX</span></a>
-        <a href="../index.html" class="back-home">← Back to Home</a>
+
+        <a href="../index.html" class="logo" aria-label="TOOLNEX Home">
+            TOOL<span>NEX</span>
+        </a>
+
+        <a href="../index.html" class="back-home">
+            ← Back to Home
+        </a>
+
     </header>
 
+    <!-- Main Content -->
     <main class="word-container">
 
+        <!-- Heading -->
         <section class="word-heading">
-            <span class="tool-label">FREE ONLINE TOOL</span>
-            <h1>Word <span>Counter</span></h1>
-            <p>Count words, characters, sentences and paragraphs instantly.</p>
+
+            <span class="tool-label">
+                FREE ONLINE TOOL
+            </span>
+
+            <h1>
+                Free Online <span>Word Counter</span>
+            </h1>
+
+            <p>
+                Count words, characters, sentences and paragraphs.
+                Analyze your text and estimate reading time instantly.
+            </p>
+
         </section>
 
-        <section class="word-workspace">
+        <!-- Word Counter Workspace -->
+        <section class="word-workspace" aria-label="Online word counter tool">
 
+            <!-- Text Editor -->
             <div class="editor-panel">
+
                 <div class="editor-top">
+
                     <h2>Your Text</h2>
-                    <span id="textStatus">Ready</span>
+
+                    <span id="textStatus" role="status">
+                        Ready
+                    </span>
+
                 </div>
 
                 <textarea
                     id="textInput"
                     placeholder="Start typing or paste your text here..."
                     spellcheck="false"
+                    aria-label="Enter text to count words and characters"
                 ></textarea>
 
                 <div class="editor-actions">
-                    <button id="copyBtn" class="secondary-btn">Copy Text</button>
-                    <button id="clearBtn" class="clear-btn">Clear Text</button>
+
+                    <button
+                        id="copyBtn"
+                        class="secondary-btn"
+                        type="button"
+                    >
+                        Copy Text
+                    </button>
+
+                    <button
+                        id="clearBtn"
+                        class="clear-btn"
+                        type="button"
+                    >
+                        Clear Text
+                    </button>
+
                 </div>
+
             </div>
 
+            <!-- Statistics -->
             <div class="stats-panel">
+
                 <h2>Text Statistics</h2>
 
                 <div class="stats-grid">
@@ -83,24 +181,70 @@
                 </div>
 
                 <div class="reading-info">
+
                     <span>Average reading speed</span>
-                    <strong>200 words / minute</strong>
+
+                    <strong>
+                        200 words / minute
+                    </strong>
+
                 </div>
+
             </div>
 
         </section>
 
+        <!-- Information -->
         <section class="word-info">
-            <h2>About Word Counter</h2>
+
+            <h2>
+                Free Online Word and Character Counter
+            </h2>
+
             <p>
-                TOOLNEX Word Counter helps you instantly analyze your text.
-                It is useful for students, writers, bloggers, developers
-                and content creators. Your text stays in your browser.
+                TOOLNEX Word Counter helps you analyze text instantly.
+                Check the total number of words, characters, characters
+                without spaces, sentences and paragraphs. You can also
+                estimate how long your text may take to read.
             </p>
+
+            <h2>
+                Who Can Use This Word Counter?
+            </h2>
+
+            <p>
+                This free word counting tool is useful for students,
+                writers, bloggers, developers, journalists and content
+                creators. Use it to check essay word limits, prepare
+                articles, review assignments and analyze written content.
+            </p>
+
+            <h2>
+                How to Count Words Online
+            </h2>
+
+            <ol>
+                <li>Type your text or paste it into the text editor.</li>
+                <li>View the word and character counts instantly.</li>
+                <li>Check sentences, paragraphs and estimated reading time.</li>
+                <li>Use Copy Text to copy your content or Clear Text to start again.</li>
+            </ol>
+
+            <h2>
+                Is My Text Uploaded to a Server?
+            </h2>
+
+            <p>
+                Your text is processed directly in your browser by this tool.
+                It does not need to be uploaded to a TOOLNEX server for counting.
+            </p>
+
         </section>
 
     </main>
 
+    <!-- JavaScript -->
     <script src="../js/word-counter.js"></script>
+
 </body>
 </html>
