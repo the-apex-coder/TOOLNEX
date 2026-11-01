@@ -1,15 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base64 Converter | TOOLNEX</title>
-    <meta name="description" content="Encode and decode Base64 text online for free with TOOLNEX. Fast, simple and easy-to-use Base64 converter.">
-    
+
+    <title>Free Base64 Encoder & Decoder Online | TOOLNEX</title>
+    <meta name="description" content="Encode and decode Base64 text online for free with TOOLNEX. Convert text to Base64 and decode Base64 strings instantly using this simple browser-based tool.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050b12">
+
+    <link rel="canonical" href="https://the-apex-coder.github.io/TOOLNEX/tools/base64-converter.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Base64 Encoder & Decoder Online | TOOLNEX">
+    <meta property="og:description" content="Encode text into Base64 or decode Base64 strings instantly with this free online developer tool.">
+    <meta property="og:url" content="https://the-apex-coder.github.io/TOOLNEX/tools/base64-converter.html">
+    <meta property="og:site_name" content="TOOLNEX">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Free Base64 Converter Online | TOOLNEX">
+    <meta name="twitter:description" content="Free online Base64 encoder and decoder for quick text conversion.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TOOLNEX Base64 Converter",
+        "url": "https://the-apex-coder.github.io/TOOLNEX/tools/base64-converter.html",
+        "description": "A free online tool to encode text into Base64 and decode Base64 strings.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/base64-converter.css">
 </head>
+
 <body>
 
     <header class="tool-header">
@@ -20,28 +53,32 @@
     <main class="base64-container">
 
         <section class="base64-heading">
-            <span class="tool-tag">FREE DEVELOPER TOOL</span>
-            <h1>Base64 <span>Converter</span></h1>
-            <p>Encode and decode text into Base64 format instantly.</p>
+            <span class="tool-tag">✦ FREE DEVELOPER TOOL</span>
+            <h1>Free Base64 <span>Converter</span></h1>
+            <p>
+                Encode text into Base64 or decode Base64 strings instantly
+                with this free online converter.
+            </p>
         </section>
 
-        <section class="base64-box">
+        <section class="base64-box" aria-label="Base64 converter workspace">
 
-            <label for="inputText">Input Text</label>
+            <label for="inputText">⌨ Input Text</label>
 
             <textarea
                 id="inputText"
                 placeholder="Enter your text or Base64 string..."
                 spellcheck="false"
+                aria-label="Enter text or Base64 input"
             ></textarea>
 
             <div class="base64-actions">
-                <button id="encodeBtn" class="primary-btn">Encode to Base64</button>
-                <button id="decodeBtn">Decode from Base64</button>
+                <button id="encodeBtn" class="primary-btn">✦ Encode to Base64</button>
+                <button id="decodeBtn">↻ Decode from Base64</button>
             </div>
 
             <div class="output-heading">
-                <label for="outputText">Result</label>
+                <label for="outputText">✧ Result</label>
                 <span id="resultStats">0 characters</span>
             </div>
 
@@ -50,12 +87,13 @@
                 placeholder="Your result will appear here..."
                 readonly
                 spellcheck="false"
+                aria-label="Base64 conversion result"
             ></textarea>
 
             <div class="bottom-actions">
-                <button id="copyBtn" class="primary-btn">Copy Result</button>
-                <button id="downloadBtn">Download Result</button>
-                <button id="clearBtn" class="clear-btn">Clear All</button>
+                <button id="copyBtn" class="primary-btn">▣ Copy Result</button>
+                <button id="downloadBtn">↓ Download Result</button>
+                <button id="clearBtn" class="clear-btn">✕ Clear All</button>
             </div>
 
             <p id="statusMessage" aria-live="polite">
@@ -64,12 +102,63 @@
 
         </section>
 
-        <p class="privacy-note">
-            🔒 Your data is processed locally in your browser.
-        </p>
+        <section class="privacy-note">
+            <p>🔒 Your data is processed locally in your browser.</p>
+        </section>
+
+        <section class="base64-info">
+
+            <h2>Free Online Base64 Encoder and Decoder</h2>
+
+            <p>
+                TOOLNEX Base64 Converter is a free online developer utility
+                that lets you encode regular text into Base64 format and
+                decode Base64 strings back into readable text. It is useful
+                for developers, students and anyone working with data
+                representation and web technologies.
+            </p>
+
+            <h2>Base64 Converter Features</h2>
+
+            <ul>
+                <li><strong>Base64 Encoding:</strong> Convert text into Base64 format.</li>
+                <li><strong>Base64 Decoding:</strong> Convert valid Base64 strings back into text.</li>
+                <li><strong>Copy Result:</strong> Copy the converted output.</li>
+                <li><strong>Download Result:</strong> Save the output as a file.</li>
+                <li><strong>Clear All:</strong> Reset the input and output fields.</li>
+            </ul>
+
+            <h2>How to Use This Base64 Tool</h2>
+
+            <ol>
+                <li>Enter or paste text into the input field.</li>
+                <li>Click Encode to Base64 or Decode from Base64.</li>
+                <li>View the converted result in the output field.</li>
+                <li>Copy or download the result when ready.</li>
+            </ol>
+
+            <h2>Is Base64 Encryption?</h2>
+
+            <p>
+                Base64 is an encoding format, not encryption. It does not
+                protect sensitive information or provide password security.
+                Anyone can decode Base64 data. Avoid treating Base64 as a
+                secure way to store passwords or confidential information.
+            </p>
+
+            <h2>Privacy-Friendly Processing</h2>
+
+            <p>
+                Text conversion is performed locally in your browser using
+                JavaScript. Your input is not uploaded to a TOOLNEX server
+                for processing.
+            </p>
+
+        </section>
 
     </main>
 
     <script src="../js/base64-converter.js"></script>
+
 </body>
 </html>
