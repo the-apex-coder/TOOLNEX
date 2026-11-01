@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Encoder & Decoder | TOOLNEX</title>
-    <meta name="description" content="Encode and decode URLs online for free with TOOLNEX. Quickly convert special characters using our URL Encoder and Decoder.">
+
+    <title>Free URL Encoder & Decoder Online - TOOLNEX</title>
+    <meta name="description" content="Encode and decode URLs online for free with TOOLNEX. Convert special characters, spaces and URL components instantly using this free online URL encoder and decoder.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050b12">
+
+    <link rel="canonical" href="https://the-apex-coder.github.io/TOOLNEX/tools/url-encoder.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free URL Encoder & Decoder Online | TOOLNEX">
+    <meta property="og:description" content="Quickly encode and decode URLs and text with this free browser-based developer tool.">
+    <meta property="og:url" content="https://the-apex-coder.github.io/TOOLNEX/tools/url-encoder.html">
+    <meta property="og:site_name" content="TOOLNEX">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Free URL Encoder & Decoder | TOOLNEX">
+    <meta name="twitter:description" content="Convert URLs and special characters online with a free URL encoder and decoder.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TOOLNEX URL Encoder and Decoder",
+        "url": "https://the-apex-coder.github.io/TOOLNEX/tools/url-encoder.html",
+        "description": "A free online utility to encode and decode URLs and text.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/url-encoder.css">
 </head>
+
 <body>
 
     <header class="tool-header">
@@ -18,33 +52,37 @@
     <main class="url-container">
 
         <section class="url-heading">
-            <span class="tool-tag">FREE DEVELOPER TOOL</span>
-            <h1>URL <span>Encoder & Decoder</span></h1>
-            <p>Encode and decode URLs and text instantly.</p>
+            <span class="tool-tag">✦ FREE DEVELOPER TOOL</span>
+            <h1>Free URL <span>Encoder & Decoder</span></h1>
+            <p>
+                Encode URLs and decode encoded text instantly.
+                Convert special characters with this free online tool.
+            </p>
         </section>
 
-        <section class="url-box">
+        <section class="url-box" aria-label="URL encoder and decoder workspace">
 
-            <label for="inputText">Input URL or Text</label>
+            <label for="inputText">⌨ Input URL or Text</label>
 
             <textarea
                 id="inputText"
                 placeholder="Enter URL or text here..."
                 spellcheck="false"
+                aria-label="Enter URL or text"
             ></textarea>
 
             <div class="url-actions">
                 <button id="encodeBtn" class="primary-btn">
-                    Encode URL
+                    ✦ Encode URL
                 </button>
 
                 <button id="decodeBtn">
-                    Decode URL
+                    ↻ Decode URL
                 </button>
             </div>
 
             <div class="output-heading">
-                <label for="outputText">Result</label>
+                <label for="outputText">✧ Result</label>
                 <span id="resultStats">0 characters</span>
             </div>
 
@@ -53,12 +91,13 @@
                 placeholder="Your result will appear here..."
                 readonly
                 spellcheck="false"
+                aria-label="URL conversion result"
             ></textarea>
 
             <div class="bottom-actions">
-                <button id="copyBtn" class="primary-btn">Copy Result</button>
-                <button id="downloadBtn">Download Result</button>
-                <button id="clearBtn" class="clear-btn">Clear All</button>
+                <button id="copyBtn" class="primary-btn">▣ Copy Result</button>
+                <button id="downloadBtn">↓ Download Result</button>
+                <button id="clearBtn" class="clear-btn">✕ Clear All</button>
             </div>
 
             <p id="statusMessage" aria-live="polite">
@@ -67,12 +106,64 @@
 
         </section>
 
-        <p class="privacy-note">
-            🔒 Your data is processed locally in your browser.
-        </p>
+        <section class="privacy-note">
+            <p>🔒 Your data is processed locally in your browser.</p>
+        </section>
+
+        <section class="url-info">
+
+            <h2>Free Online URL Encoder and Decoder</h2>
+
+            <p>
+                TOOLNEX URL Encoder and Decoder is a free online developer
+                utility that converts special characters into URL-encoded
+                formats and decodes encoded strings back into readable text.
+                It can help developers, students and web users prepare text
+                and URL components for use in web applications.
+            </p>
+
+            <h2>URL Encoder and Decoder Features</h2>
+
+            <ul>
+                <li><strong>URL Encoding:</strong> Encode special characters into percent-encoded format.</li>
+                <li><strong>URL Decoding:</strong> Decode valid percent-encoded text.</li>
+                <li><strong>Copy Result:</strong> Copy the converted output.</li>
+                <li><strong>Download Result:</strong> Save the result as a text file.</li>
+                <li><strong>Clear All:</strong> Reset the input and output fields.</li>
+            </ul>
+
+            <h2>How to Encode or Decode a URL</h2>
+
+            <ol>
+                <li>Paste your URL or text into the input field.</li>
+                <li>Click Encode URL or Decode URL.</li>
+                <li>View the converted result in the output area.</li>
+                <li>Copy or download the result when ready.</li>
+            </ol>
+
+            <h2>What Is URL Encoding?</h2>
+
+            <p>
+                URL encoding converts certain characters into a format
+                that can safely be represented in a URL. Characters that
+                have special meanings in URLs may need to be encoded when
+                used as data. Percent-encoding represents these characters
+                using a percent sign followed by hexadecimal values.
+            </p>
+
+            <h2>Privacy-Friendly Processing</h2>
+
+            <p>
+                URL conversion is performed locally in your browser using
+                JavaScript. Your input is not uploaded to a TOOLNEX server
+                for processing.
+            </p>
+
+        </section>
 
     </main>
 
     <script src="../js/url-encoder.js"></script>
+
 </body>
 </html>
