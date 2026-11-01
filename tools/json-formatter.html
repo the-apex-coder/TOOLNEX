@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON Formatter & Validator | TOOLNEX</title>
 
-    <meta name="description" content="Format, validate and minify JSON online for free. Use the TOOLNEX JSON Formatter to organize and check your JSON data.">
+    <title>Free JSON Formatter & Validator Online - TOOLNEX</title>
+    <meta name="description" content="Format, validate and minify JSON online for free. Use TOOLNEX JSON Formatter to beautify JSON, check syntax errors and compress JSON data instantly.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050b12">
+
+    <link rel="canonical" href="https://the-apex-coder.github.io/TOOLNEX/tools/json-formatter.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free JSON Formatter & Validator Online | TOOLNEX">
+    <meta property="og:description" content="Beautify, validate and minify JSON data with this free online developer tool.">
+    <meta property="og:url" content="https://the-apex-coder.github.io/TOOLNEX/tools/json-formatter.html">
+    <meta property="og:site_name" content="TOOLNEX">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Free JSON Formatter & Validator | TOOLNEX">
+    <meta name="twitter:description" content="Format, validate and minify JSON data instantly with TOOLNEX.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TOOLNEX JSON Formatter",
+        "url": "https://the-apex-coder.github.io/TOOLNEX/tools/json-formatter.html",
+        "description": "A free online JSON tool to format, validate and minify JSON data.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/json-formatter.css">
 </head>
+
 <body>
 
     <header class="tool-header">
@@ -20,33 +52,40 @@
     <main class="json-container">
 
         <section class="json-heading">
-            <span class="tool-tag">FREE DEVELOPER TOOL</span>
-            <h1>JSON <span>Formatter</span></h1>
-            <p>Format, validate and minify your JSON data instantly.</p>
+            <span class="tool-tag">✦ FREE DEVELOPER TOOL</span>
+            <h1>Free JSON <span>Formatter</span></h1>
+            <p>
+                Format, validate and minify JSON data online.
+                A simple tool for developers working with JSON.
+            </p>
         </section>
 
-        <section class="json-box">
+        <section class="json-box" aria-label="JSON formatter workspace">
 
             <div class="editor-heading">
-                <label for="jsonInput">Input JSON</label>
-                <button id="clearBtn" class="small-btn">Clear</button>
+                <label for="jsonInput">⌨ Input JSON</label>
+                <button id="clearBtn" class="small-btn">✕ Clear</button>
             </div>
 
             <textarea
                 id="jsonInput"
                 spellcheck="false"
-                placeholder='Paste JSON here...&#10;&#10;Example:&#10;{"name":"TOOLNEX","active":true}'
+                placeholder='Paste JSON here...
+
+Example:
+{"name":"TOOLNEX","active":true}'
+                aria-label="Enter JSON data"
             ></textarea>
 
             <div class="json-actions">
-                <button id="formatBtn" class="primary-btn">Format JSON</button>
-                <button id="validateBtn">Validate JSON</button>
-                <button id="minifyBtn">Minify JSON</button>
+                <button id="formatBtn" class="primary-btn">✦ Format JSON</button>
+                <button id="validateBtn">✓ Validate JSON</button>
+                <button id="minifyBtn">⚡ Minify JSON</button>
             </div>
 
             <div class="editor-heading output-heading">
-                <label for="jsonOutput">Output</label>
-                <button id="copyBtn" class="small-btn">Copy Output</button>
+                <label for="jsonOutput">✧ Output</label>
+                <button id="copyBtn" class="small-btn">▣ Copy Output</button>
             </div>
 
             <textarea
@@ -54,6 +93,7 @@
                 spellcheck="false"
                 placeholder="Formatted JSON will appear here..."
                 readonly
+                aria-label="JSON output"
             ></textarea>
 
             <div id="statusMessage" aria-live="polite">
@@ -62,12 +102,53 @@
 
         </section>
 
-        <p class="privacy-note">
-            🔒 Your JSON data is processed locally in your browser.
-        </p>
+        <section class="privacy-note">
+            <p>🔒 Your JSON data is processed locally in your browser.</p>
+        </section>
+
+        <section class="json-info">
+
+            <h2>Free Online JSON Formatter and Validator</h2>
+
+            <p>
+                TOOLNEX JSON Formatter is a free browser-based developer
+                utility that helps you organize, validate and compress
+                JSON data. Format messy JSON into a readable structure,
+                check whether your JSON syntax is valid, or minify JSON
+                to remove unnecessary whitespace.
+            </p>
+
+            <h2>JSON Formatting Features</h2>
+
+            <ul>
+                <li><strong>Format JSON:</strong> Beautify JSON with readable indentation.</li>
+                <li><strong>Validate JSON:</strong> Check JSON syntax for errors.</li>
+                <li><strong>Minify JSON:</strong> Remove unnecessary whitespace to create compact JSON.</li>
+                <li><strong>Copy Output:</strong> Copy processed JSON to your clipboard.</li>
+                <li><strong>Clear:</strong> Clear the editor and start again.</li>
+            </ul>
+
+            <h2>How to Use the JSON Formatter</h2>
+
+            <ol>
+                <li>Paste or type your JSON data into the input editor.</li>
+                <li>Choose Format, Validate or Minify.</li>
+                <li>Check the output and status message.</li>
+                <li>Copy your processed JSON when ready.</li>
+            </ol>
+
+            <h2>Privacy-Friendly JSON Processing</h2>
+
+            <p>
+                JSON processing happens locally in your browser using
+                JavaScript. Your JSON data is not uploaded to a TOOLNEX
+                server for processing.
+            </p>
+
+        </section>
 
     </main>
 
     <script src="../js/json-formatter.js"></script>
+
 </body>
-</html>
