@@ -1,15 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online PDF tools to merge, split and convert PDF files and images.">
-    <title>PDF Tools - TOOLNEX</title>
+
+    <title>Free Online PDF Tools - Merge, Split & Convert PDF | TOOLNEX</title>
+    <meta name="description" content="Use free online PDF tools to merge PDF files, split pages, convert images to PDF and PDF pages to PNG images. Simple browser-based PDF toolkit by TOOLNEX.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050b12">
+
+    <link rel="canonical" href="https://the-apex-coder.github.io/TOOLNEX/tools/pdf-tools.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online PDF Tools - TOOLNEX">
+    <meta property="og:description" content="Merge, split and convert PDF files online with free TOOLNEX PDF tools.">
+    <meta property="og:url" content="https://the-apex-coder.github.io/TOOLNEX/tools/pdf-tools.html">
+    <meta property="og:site_name" content="TOOLNEX">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Free Online PDF Tools - TOOLNEX">
+    <meta name="twitter:description" content="Merge PDFs, extract pages and convert images and PDF documents online for free.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TOOLNEX PDF Tools",
+        "url": "https://the-apex-coder.github.io/TOOLNEX/tools/pdf-tools.html",
+        "description": "Free browser-based tools to merge PDF files, split PDF pages, convert images to PDF and PDF pages to images.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/pdf-tools.css">
 </head>
+
 <body>
 
     <header class="navbar">
@@ -21,11 +53,11 @@
 
         <section class="pdf-heading">
             <span class="tool-label">FREE ONLINE PDF TOOLKIT</span>
-            <h1>PDF <span>Tools</span></h1>
-            <p>Merge, split and convert your PDF files easily.</p>
+            <h1>Free Online PDF <span>Tools</span></h1>
+            <p>Merge PDF files, extract pages and convert PDFs and images with simple browser-based tools.</p>
         </section>
 
-        <section class="pdf-workspace">
+        <section class="pdf-workspace" aria-label="PDF tools workspace">
 
             <div class="tool-tabs">
                 <button class="tab-btn active" data-tool="merge">Merge PDF</button>
@@ -39,8 +71,8 @@
                 <!-- MERGE PDF -->
                 <div class="tool-content active" id="mergePanel">
 
-                    <h2>Merge PDF Files</h2>
-                    <p>Select multiple PDF files to combine them into one PDF.</p>
+                    <h2>Merge PDF Files Online</h2>
+                    <p>Combine multiple PDF documents into one file. Select the PDF files you want to merge.</p>
 
                     <input type="file" id="mergeInput" accept=".pdf,application/pdf" multiple hidden>
 
@@ -61,8 +93,8 @@
                 <!-- SPLIT PDF -->
                 <div class="tool-content" id="splitPanel">
 
-                    <h2>Split PDF</h2>
-                    <p>Extract selected pages from your PDF document.</p>
+                    <h2>Split PDF and Extract Pages</h2>
+                    <p>Select a PDF document and enter the page numbers or ranges you want to extract.</p>
 
                     <input type="file" id="splitInput" accept=".pdf,application/pdf" hidden>
 
@@ -94,8 +126,8 @@
                 <!-- IMAGES TO PDF -->
                 <div class="tool-content" id="imagesPanel">
 
-                    <h2>Images to PDF</h2>
-                    <p>Combine multiple images into a single PDF document.</p>
+                    <h2>Convert Images to PDF</h2>
+                    <p>Combine multiple JPG, PNG or WebP images into a single PDF document.</p>
 
                     <input
                         type="file"
@@ -122,8 +154,8 @@
                 <!-- PDF TO IMAGES -->
                 <div class="tool-content" id="convertPanel">
 
-                    <h2>PDF to Images</h2>
-                    <p>Convert each page of your PDF into a PNG image.</p>
+                    <h2>Convert PDF to Images</h2>
+                    <p>Turn PDF document pages into individual PNG images.</p>
 
                     <input type="file" id="convertInput" accept=".pdf,application/pdf" hidden>
 
@@ -157,13 +189,32 @@
         </section>
 
         <section class="pdf-info">
-            <h2>About TOOLNEX PDF Tools</h2>
+            <h2>Free PDF Tools for Everyday Tasks</h2>
+
             <p>
-                Manage PDF documents directly in your browser.
-                Merge documents, extract pages and convert images
-                without uploading your files to our server.
+                TOOLNEX provides a simple collection of online PDF utilities
+                for managing documents in your browser. Merge multiple PDF
+                files, extract selected pages, create PDF documents from images
+                or convert PDF pages into PNG images.
             </p>
-            <small>Maximum supported PDF file size: 50 MB per file.</small>
+
+            <h2>How to Use These PDF Tools</h2>
+
+            <ul>
+                <li>Choose the PDF or image tool you want to use.</li>
+                <li>Select your files from your device.</li>
+                <li>Follow the instructions for the selected tool.</li>
+                <li>Download your processed file when it is ready.</li>
+            </ul>
+
+            <h2>Privacy and File Support</h2>
+
+            <p>
+                File processing is performed in your browser using client-side
+                libraries. Your selected files are not uploaded to a TOOLNEX
+                server for processing. Maximum supported PDF file size:
+                50 MB per file.
+            </p>
         </section>
 
     </main>
